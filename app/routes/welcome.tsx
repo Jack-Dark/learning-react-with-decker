@@ -1,4 +1,4 @@
-import { Counter } from "~/counter";
+import { Welcome } from "../welcome/welcome";
 
 export function meta() {
   return [
@@ -8,5 +8,5 @@ export function meta() {
 }
 
 export default function Home() {
-  return <Counter />;
+  return <Welcome />;
 }
