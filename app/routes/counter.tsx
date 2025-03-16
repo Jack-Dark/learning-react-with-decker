@@ -1,3 +1,5 @@
+import { Counter } from "~/counter";
+
 export function meta() {
   return [
     { title: "New React Router App" },
@@ -6,14 +8,5 @@ export function meta() {
 }
 
 export default function Home() {
-  return (
-    <ul>
-      <li>
-        <a href="/welcome">Welcome</a>
-      </li>
-      <li>
-        <a href="/counter">Counter</a>
-      </li>
-    </ul>
-  );
+  return <Counter />;
 }
