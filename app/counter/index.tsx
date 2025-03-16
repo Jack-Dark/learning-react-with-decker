@@ -11,7 +11,7 @@ export const Counter = () => {
         </div>
 
         <button
-          className="btn bg-teal-400 px-3 py-2"
+          className="cursor-pointer btn bg-red-400 px-3 py-2"
           onClick={() => {
             setCount(count - 1);
             // setCount(prevCount => prevCount - 1)
@@ -20,7 +20,7 @@ export const Counter = () => {
           -1
         </button>
         <button
-          className="btn bg-teal-400 px-3 py-2"
+          className="cursor-pointer btn bg-green-400 px-3 py-2"
           onClick={() => {
             setCount(count + 1);
             // setCount(prevCount => prevCount + 1)
