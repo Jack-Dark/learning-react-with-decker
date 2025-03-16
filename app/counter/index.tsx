@@ -5,25 +5,25 @@ export const Counter = () => {
 
   return (
     <>
-      <div className="p-4 grid grid-cols-2 gap-4 max-w-lg">
+      <div className="grid max-w-lg grid-cols-2 gap-4 p-4">
         <div className="col-span-2">
           <p>Current count: {count}</p>
         </div>
 
         <button
-          className="cursor-pointer btn bg-red-400 px-3 py-2"
+          className="btn cursor-pointer bg-red-400 px-3 py-2"
           onClick={() => {
             setCount(count - 1);
-            // setCount(prevCount => prevCount - 1)
+            // setCount(prevCount => prevCount - 1);
           }}
         >
           -1
         </button>
         <button
-          className="cursor-pointer btn bg-green-400 px-3 py-2"
+          className="btn cursor-pointer bg-emerald-600 px-3 py-2"
           onClick={() => {
             setCount(count + 1);
-            // setCount(prevCount => prevCount + 1)
+            // setCount(prevCount => prevCount + 1);
           }}
         >
           +1

@@ -7,12 +7,16 @@ export function meta() {
 
 export default function Home() {
   return (
-    <ul>
+    <ul className="list-inside list-disc p-3">
       <li>
-        <a href="/welcome">Welcome</a>
+        <a className="underline" href="/welcome">
+          Welcome
+        </a>
       </li>
       <li>
-        <a href="/counter">Counter</a>
+        <a className="underline" href="/counter">
+          Counter
+        </a>
       </li>
     </ul>
   );
