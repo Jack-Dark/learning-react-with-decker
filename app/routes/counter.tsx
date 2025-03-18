@@ -1,4 +1,4 @@
-import { Counter } from "~/counter";
+import { Counter } from "~/pages/counter";
 
 export function meta() {
   return [
