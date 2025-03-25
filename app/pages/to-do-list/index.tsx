@@ -20,7 +20,21 @@ export const ToDoList = (props: ToDoListPropsDef) => {
       {toDoListItems.map((item, index) => {
         return (
           <div key={index}>
-            <input type="text" value={item.description} />
+            <input
+              type="text"
+              value={item.description}
+              onChange={(event) => {
+                const value = event.target.value;
+                setToDoListItems((prevToDoListItems) => {
+                  //const updatedToDoList = [...prevToDoListItems];
+                  //updatedToDoList[index] = { ...item, description: value };
+                  //return updatedToDoList;
+                  return;
+                });
+
+                console.log(value);
+              }}
+            />
           </div>
         );
       })}

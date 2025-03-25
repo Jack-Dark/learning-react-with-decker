@@ -1,8 +1,8 @@
-import { ToDoList } from "../pages/to-do-list";
+import { ToDoList } from "~/pages/to-do-list";
 
 export function meta() {
   return [
-    { title: "To-Do-List" },
+    { title: "To do List" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }
@@ -10,8 +10,8 @@ export function meta() {
 export default function Home() {
   return (
     <ToDoList
-      title="Forest Stuff To Do"
-      initialItems={[{ isComplete: true, description: "Eat Lunch" }]}
+      title="Super cool list"
+      initialItems={[{ isComplete: true, description: "code" }]}
     />
   );
 }
