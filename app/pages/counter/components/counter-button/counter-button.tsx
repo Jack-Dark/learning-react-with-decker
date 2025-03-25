@@ -1,16 +1,16 @@
-import type { CounterButtonPropsDef } from "./counter_button.types";
+import type { CounterButtonPropsDef } from "./counter-button.types";
 
 export const CounterButton = (props: CounterButtonPropsDef) => {
-  const { setCount, backgroundColor, children, changeValue } = props;
+  const { setCount, backgroundColor, changeValue } = props;
   return (
     <button
-      className={`btn cursor-pointer ${backgroundColor} py-2" px-3`}
+      className={`btn cursor-pointer ${backgroundColor} px-3 py-2`}
       onClick={() => {
         //  setCount(count + 1);
         setCount((prevCount) => prevCount + changeValue);
       }}
     >
-      {children}
+      {changeValue > 0 ? `+${changeValue}` : changeValue}
     </button>
   );
 };

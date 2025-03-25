@@ -2,7 +2,7 @@ import { Counter } from "~/pages/counter";
 
 export function meta() {
   return [
-    { title: "New React Router App" },
+    { title: "Counter" },
     { name: "description", content: "Welcome to React Router!" },
   ];
 }

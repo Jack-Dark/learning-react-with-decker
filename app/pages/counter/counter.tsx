@@ -26,16 +26,12 @@ export const Counter = () => {
           setCount={setCount}
           backgroundColor="bg-red-400"
           changeValue={-1}
-        >
-          -1
-        </CounterButton>
+        />
         <CounterButton
           setCount={setCount}
           backgroundColor="bg-emerald-600"
           changeValue={1}
-        >
-          +1
-        </CounterButton>
+        />
       </div>
     </>
   );

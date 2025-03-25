@@ -18,6 +18,11 @@ export default function Home() {
           Counter
         </a>
       </li>
+      <li>
+        <a className="underline" href="/to-do-list">
+          To Do List
+        </a>
+      </li>
     </ul>
   );
 }
