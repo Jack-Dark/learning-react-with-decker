@@ -1,4 +1,4 @@
-import type { CounterButtonPropsDef } from "./CounterButtonPropsDef";
+import type { CounterButtonPropsDef } from "./counter_button.types";
 
 export const CounterButton = (props: CounterButtonPropsDef) => {
   const { setCount, backgroundColor, children, changeValue } = props;
