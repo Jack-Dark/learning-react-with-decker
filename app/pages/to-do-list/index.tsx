@@ -26,13 +26,12 @@ export const ToDoList = (props: ToDoListPropsDef) => {
               onChange={(event) => {
                 const value = event.target.value;
                 setToDoListItems((prevToDoListItems) => {
-                  //const updatedToDoList = [...prevToDoListItems];
-                  //updatedToDoList[index] = { ...item, description: value };
-                  //return updatedToDoList;
-                  return;
+                  prevToDoListItems.map((item, prevIndex) => {
+                    if (index === prevIndex) {
+                      const updatedItem: ToDoListItemDef = { ...item };
+                    }
+                  });
                 });
-
-                console.log(value);
               }}
             />
           </div>
